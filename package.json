@@ -6,7 +6,8 @@
   "scripts": {
     "lint:js": "eslint .",
     "lint:css": "stylelint blocks/**/*.css styles/*.css",
-    "lint": "npm run lint:js && npm run lint:css"
+    "lint": "npm run lint:js && npm run lint:css",
+    "up-secure": "sudo aem up --tls-cert=local-cert/server.crt --tls-key=local-cert/server.key --port=443 --open https://experienceleague-test.adobe.com"
   },
   "repository": {
     "type": "git",
